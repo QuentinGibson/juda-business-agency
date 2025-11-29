@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Manrope, Poppins } from "next/font/google";
 
 export const metadata: Metadata = {
 	title: "Create T3 App",
@@ -9,16 +9,22 @@ export const metadata: Metadata = {
 	icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const geist = Geist({
+const _poppins = Poppins({
+	weight: ["400", "500", "600"],
 	subsets: ["latin"],
-	variable: "--font-geist-sans",
+	variable: "--font-poppins-sans",
+});
+
+const manrope = Manrope({
+	subsets: ["latin"],
+	variable: "--font-manrope-sans",
 });
 
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" className={`${geist.variable}`}>
+		<html lang="en" className={`${manrope.variable} `}>
 			<body className="max-w-[1920px]">{children}</body>
 		</html>
 	);
