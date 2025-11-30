@@ -15,7 +15,7 @@ function CallToAction() {
 
 	return (
 		<div className="text-white">
-			<div className="grid grid-cols-[50%_35%] justify-between items-end">
+			<div className="grid grid-cols-2 justify-items-end items-end">
 				{/*Left Side*/}
 				<div className="gap-y-12 flex flex-col">
 					<h1 className="text-[70px] font-normal">
@@ -50,7 +50,7 @@ function CallToAction() {
 					</div>
 				</div>
 				{/* Right Side */}
-				<div>
+				<div className="relative w-full flex justify-end">
 					<div className="relative w-full max-w-[580px]">
 						<svg
 							className="w-full h-auto"
