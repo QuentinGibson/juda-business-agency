@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const _poppins = Poppins({
+const poppins = Poppins({
 	weight: ["400", "500", "600"],
 	subsets: ["latin"],
 	variable: "--font-poppins-sans",
@@ -24,7 +24,7 @@ export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" className={`${manrope.variable} `}>
+		<html lang="en" className={`${manrope.variable} ${poppins.variable}`}>
 			<body className="max-w-[1920px]">{children}</body>
 		</html>
 	);
