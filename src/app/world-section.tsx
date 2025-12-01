@@ -16,55 +16,84 @@ function WorldSection() {
 					<div>
 						<h1 className="text-[30px] text-brand">Business Agency Website</h1>
 					</div>
-					<div className="flex gap-x-10">
+					<div className="flex gap-x-10 justify-between">
 						<span className="text-[70px] w-[692px]">
 							World of Business Opportunities and Success.
 						</span>
-						<div className="flex flex-col gap-4">
-							<span className="font-medium font-poppins">
+						<div className="flex flex-col gap-4 w-[181px]">
+							<span className="font-medium text-lg font-poppins">
 								Our AI Generation Tools.
 							</span>
 							<span className="font-poppins">
 								Unlock creativity and productivity
 							</span>
 						</div>
-						<div>
-							<div className="flex flex-col">
+						<div className="flex">
+							<div className="flex flex-col w-[133px]">
 								<span className="font-medium text-4xl">472+</span>
-								<span className="text-xl uppercase">Expert Solutions</span>
+								<span className="text-xl uppercase font-light">
+									Expert Solutions
+								</span>
 							</div>
-							<div className="flex flex-col">
+							<div className="flex flex-col w-[133px]">
 								<span className="font-medium text-4xl">597+</span>
-								<span className="text-xl uppercase">Enterprises To Thrive</span>
+								<span className="text-xl uppercase font-light">
+									Enterprises To Thrive
+								</span>
 							</div>
 						</div>
 					</div>
-					<div>
-						<div>
-							<div className="inline-flex items-center gap-4 bg-brand rounded-full lg:px-4 px-6 py-1 shadow-lg self-end">
-								<div className="flex -space-x-3">
-									{clients.map((client) => (
-										<div
-											key={client.id}
-											className="relative size-10 xl:size-12 rounded-full border-2 border-brand overflow-hidden bg-gray-200"
-										>
-											<Image
-												className="object-cover"
-												fill
-												alt={client.alt}
-												src={client.src}
-												sizes="48px"
-												quality={95}
-											/>
-										</div>
-									))}
+					<div className="flex">
+						<div className="flex flex-col justify-around">
+							<div>
+								<div className="inline-flex items-center gap-4 bg-brand rounded-full lg:px-4 px-6 py-1 shadow-lg self-end">
+									<div className="flex -space-x-3">
+										{clients.map((client) => (
+											<div
+												key={client.id}
+												className="relative size-10 xl:size-12 rounded-full border-2 border-brand overflow-hidden bg-gray-200"
+											>
+												<Image
+													className="object-cover"
+													fill
+													alt={client.alt}
+													src={client.src}
+													sizes="48px"
+													quality={95}
+												/>
+											</div>
+										))}
+									</div>
+									<div className="flex flex-col">
+										<span className="text-black font-bold text-xl">1000k+</span>
+										<span className="text-black text-xs py-0.5 rounded-full">
+											Our Client Here
+										</span>
+									</div>
 								</div>
-								<div className="flex flex-col">
-									<span className="text-black font-bold text-xl">1000k+</span>
-									<span className="text-black text-xs py-0.5 rounded-full">
-										Our Client Here
+							</div>
+							<span className="font-medium">
+								From innovative marketing strategies to operational excellence,
+								we provide expert guidance to help your
+							</span>
+						</div>
+						<div className="p-20 border border-white/30 bg-white/6 rounded-4xl flex gap-x-24">
+							<div className="flex flex-col">
+								<span className="text-[59px]">52k+</span>
+								<span className="text-[22px]">
+									Your Success Is Our Business
+								</span>
+							</div>
+							<div className="flex flex-col gap-y-9">
+								<div>
+									<span className="bg-brand rounded-4xl px-2 py-1 text-black">
+										Helping Businesses
 									</span>
 								</div>
+								<span className="font-medium w-[336px]">
+									From innovative marketing strategies to operational
+									excellence, we provide expert guidance to help your
+								</span>
 							</div>
 						</div>
 					</div>
