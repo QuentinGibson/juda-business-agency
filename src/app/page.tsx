@@ -12,6 +12,7 @@ import upwardArrow from "~/assets/upwardArrow.svg";
 import upwardArrowBrand from "~/assets/upwardArrowBrand.svg";
 import BrighterFuture from "./brighter-future";
 import CallToAction from "./call-to-action";
+import Innovation from "./innovation";
 import Navigation from "./navigation";
 import WorldSection from "./world-section";
 
@@ -139,6 +140,7 @@ export default function HomePage() {
 			</section>
 			<BrighterFuture />
 			<WorldSection />
+			<Innovation />
 		</main>
 	);
 }
