@@ -28,14 +28,14 @@ function WorldSection() {
 								Unlock creativity and productivity
 							</span>
 						</div>
-						<div className="flex">
-							<div className="flex flex-col w-[133px]">
+						<div className="flex gap-x-11">
+							<div className="flex flex-col w-[133px] gap-y-5">
 								<span className="font-medium text-4xl">472+</span>
 								<span className="text-xl uppercase font-light">
 									Expert Solutions
 								</span>
 							</div>
-							<div className="flex flex-col w-[133px]">
+							<div className="flex flex-col w-[133px] gap-y-5">
 								<span className="font-medium text-4xl">597+</span>
 								<span className="text-xl uppercase font-light">
 									Enterprises To Thrive
@@ -43,7 +43,7 @@ function WorldSection() {
 							</div>
 						</div>
 					</div>
-					<div className="flex">
+					<div className="flex gap-x-50">
 						<div className="flex flex-col justify-around">
 							<div>
 								<div className="inline-flex items-center gap-4 bg-brand rounded-full lg:px-4 px-6 py-1 shadow-lg self-end">
@@ -78,7 +78,7 @@ function WorldSection() {
 							</span>
 						</div>
 						<div className="p-20 border border-white/30 bg-white/6 rounded-4xl flex gap-x-24">
-							<div className="flex flex-col">
+							<div className="flex flex-col w-[212px]">
 								<span className="text-[59px]">52k+</span>
 								<span className="text-[22px]">
 									Your Success Is Our Business

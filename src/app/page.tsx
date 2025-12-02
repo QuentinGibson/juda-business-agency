@@ -12,6 +12,7 @@ import upwardArrow from "~/assets/upwardArrow.svg";
 import upwardArrowBrand from "~/assets/upwardArrowBrand.svg";
 import BrighterFuture from "./brighter-future";
 import CallToAction from "./call-to-action";
+import Footer from "./footer";
 import Innovation from "./innovation";
 import Navigation from "./navigation";
 import WorldSection from "./world-section";
@@ -71,11 +72,12 @@ export default function HomePage() {
 									Your Success Is Our Business
 								</span>
 							</div>
-							<div className="flex flex-col">
-								<span className="text-[59px]">
-									Your Partner in Business Growth
+							<div className="flex flex-col gap-y-20">
+								<span className="text-[40px]">
+									Your Partner in
+									<br /> Business Growth
 								</span>
-								<span className="text-[22px]">
+								<span className="text-[22px] w-[338px]">
 									Empower your business with our comprehensive agency solutions
 									tailored to meet your unique needs.
 								</span>
@@ -141,6 +143,7 @@ export default function HomePage() {
 			<BrighterFuture />
 			<WorldSection />
 			<Innovation />
+			<Footer />
 		</main>
 	);
 }
